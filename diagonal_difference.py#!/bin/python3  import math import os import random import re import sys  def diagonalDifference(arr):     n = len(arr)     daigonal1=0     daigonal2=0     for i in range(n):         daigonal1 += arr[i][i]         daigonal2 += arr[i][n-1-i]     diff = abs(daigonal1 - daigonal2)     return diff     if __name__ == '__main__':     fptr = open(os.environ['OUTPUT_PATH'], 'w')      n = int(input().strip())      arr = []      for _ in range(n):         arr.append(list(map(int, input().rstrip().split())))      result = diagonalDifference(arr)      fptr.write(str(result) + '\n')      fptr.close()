@@ -1,0 +1,31 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+def diagonalDifference(arr):
+    n = len(arr)
+    daigonal1=0
+    daigonal2=0
+    for i in range(n):
+        daigonal1 += arr[i][i]
+        daigonal2 += arr[i][n-1-i]
+    diff = abs(daigonal1 - daigonal2)
+    return diff   
+
+if __name__ == '__main__':
+    n = int(input("Enter the size of the square matrix: ").strip())
+
+    arr = []
+
+    print("Enter the matrix elements row by row:")
+    for _ in range(n):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    result = diagonalDifference(arr)
+
+    print("The absolute difference between the diagonal sums is:", result)
+
