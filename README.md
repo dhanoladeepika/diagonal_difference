@@ -1,2 +1,3 @@
 # diagonal_difference
-diagonal_difference is a Python tool for swiftly computing the absolute difference between the sums of the primary diagonals in a given square matrix. This utility simplifies diagonal analysis, making it valuable across mathematics, computer science, and data analysis.
+The diagonal_difference program takes a square matrix as input and returns the absolute difference between the sums of the left-to-right diagonal and the right-to-left diagonal. The program works by using a loop to iterate through the matrix and add up the elements on the left-to-right diagonal and the right-to-left diagonal. The absolute difference is then calculated by subtracting the smaller sum from the larger sum.
+The diagonal_difference program is a simple and efficient solution to the problem of calculating the absolute difference between the sums of the diagonals of a square matrix. It is also a good example of how to use a loop to iterate through a matrix.
